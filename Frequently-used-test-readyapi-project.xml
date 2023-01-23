@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="58768587-fc49-4682-b311-ffbab8663c2d" created="3.20.2" activeEnvironment="Test5" name="Frequently used test" resourceRoot="" updated="3.20.2 2022-02-16T13:03:17Z" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="1917304f-bfdd-40d7-acce-e2c670fe7a15" name="Broker" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart="Broker.json">
+      <con:part>
+        <con:url>Broker.json</con:url>
+        <con:content>{"openapi":"3.0.1","info":{"title":"Broker","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/brokers/v1/joinAcceptance":{"post":{"requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}}}}</con:content>
+        <con:type>https://swagger.io/openapiv3/specification</con:type>
+      </con:part>
+    </con:definitionCache>
+    <con:endpoints/>
+    <con:environmentSpec>
+      <con:entry environmentId="e5eb2e04-99ee-456f-b982-728fdae4ae6f">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+    <con:resource name="joinAcceptance" path="/brokers/v1/joinAcceptance" id="e19a9189-1f46-4868-9960-11f89b02b90c">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Method 1" id="5fac2ba6-c814-4e4c-859c-011e47f5025d" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="Request 1" id="ba3814b9-dbd0-40df-ae56-672528663124" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="client_id" value="0oap85uz0iwMK1jv20h7"/>
+  &lt;con:entry key="client_secret" value="M9JAe-EDAjKpcCHBU2OftaoXBdyRW9Tmah4_K8YU"/>
+&lt;/xml-fragment></con:setting>
+          </con:settings>
+          <con:request><![CDATA[<GetHCFSaleInfo>
+<GetAgentDetails>
+    <SourceCode>O20810</SourceCode>
+    <AgentCustomerId>1111122</AgentCustomerId>
+    <AgentPaymentId>555533</AgentPaymentId>
+</GetAgentDetails>
+ <GetClientDetails>
+    <Title>004</Title>
+    <GivenName>Dean</GivenName>
+    <Surname>smith</Surname>
+    <DOB>18041971</DOB>
+    <Gender>F</Gender>
+    <Address1>400 Castlereagh Street</Address1>
+    <Address2></Address2>
+    <Suburb>Sydney</Suburb>
+    <State>NSW</State>
+    <PostCode>2000</PostCode>
+    <PostalSameResidenceInd>N</PostalSameResidenceInd>
+    <PostalAddress1>PO BOX 111</PostalAddress1>
+    <PostalAddress2></PostalAddress2>
+    <PostalSuburb>Sydney</PostalSuburb>
+    <PostalState>nsw</PostalState>
+    <PostalPostCode>2000</PostalPostCode>
+    <HomePhone>0292900456</HomePhone>
+    <WorkPhone/>
+    <MobilePhone/>
+    <EmailAddress>dhoppitt@hcf.com.au</EmailAddress>
+    <MaritalStatus>F</MaritalStatus>
+    <NumDependants>1</NumDependants>
+    <DeclareDate>02122022</DeclareDate>
+    <RegisterFurtherCommunication>Y</RegisterFurtherCommunication>
+</GetClientDetails>
+<GetPolicyDetails>
+    <CommencementDate>02122022</CommencementDate>
+    <HospitalCover>PremHosp</HospitalCover>
+    <ExtrasCover>SilverPlus</ExtrasCover>
+    <FederalRebate>N</FederalRebate>
+    <RebateTier></RebateTier>
+    <MedicareNumber></MedicareNumber>
+    <MedicareGivenName></MedicareGivenName>
+    <MedicareMiddleInitial></MedicareMiddleInitial>
+    <MedicareSurname></MedicareSurname>
+    <MedicareDOB></MedicareDOB>
+    <MedicareGender></MedicareGender>
+    <MedicareExpiryDate></MedicareExpiryDate>
+    <MedicareEligibility>Y</MedicareEligibility>
+    <ContinuousCover>Y</ContinuousCover>
+    <PartnerContinuousCover>N</PartnerContinuousCover>
+    <BasePremium></BasePremium>
+    <TotalPremium></TotalPremium>
+    <ExcessCode>G</ExcessCode>
+    <TransferFromFund>Y</TransferFromFund>
+</GetPolicyDetails>
+<GetPartnerDetails>
+    <PartnerTitle>001</PartnerTitle>
+    <PartnerGivenName>Adam</PartnerGivenName>
+    <PartnerSurname>Gorham</PartnerSurname>
+    <PartnerDOB>29071965</PartnerDOB>
+    <PartnerGender>m</PartnerGender>
+</GetPartnerDetails>
+<GetDependantsDetails>
+    <Dependant>
+        <DependantTitle>001</DependantTitle>
+        <DependantGivenName>DXXXX</DependantGivenName>
+        <DependantSurname>Gorham</DependantSurname>
+        <DependantGender>M</DependantGender>
+        <Relationship>4</Relationship>
+        <DependantDOB>30101991</DependantDOB>
+        <DependantSchool>UNSW</DependantSchool>
+    </Dependant>
+</GetDependantsDetails>
+<GetOneOffPaymentDetails>
+    <OneOffPayment>N</OneOffPayment>
+    <CCToken></CCToken>
+    <CCMaskedPan></CCMaskedPan>
+    <CCExpiryDate></CCExpiryDate>
+    <InitialPaymentFrequency></InitialPaymentFrequency>
+    <InitialAmountPaid></InitialAmountPaid>
+</GetOneOffPaymentDetails>
+<GetDirectDebitPaymentDetails>
+    <DebitType>C</DebitType>
+    <DebitFrequency>m</DebitFrequency>
+    <DebitDay>21</DebitDay>
+</GetDirectDebitPaymentDetails>
+<GetDebitCCDetails>
+    <DDCCHolderName>Test Name</DDCCHolderName>
+    <DDCCToken>9994111111111111111</DDCCToken>
+    <DDCCMaskedPan>411111XXXXXX1111</DDCCMaskedPan>
+    <DDCCExpiryDate>122023</DDCCExpiryDate>
+</GetDebitCCDetails>
+<GetDirectCreditDetails>
+    <DirectCredit>Y</DirectCredit>
+    <CRAccountName>TEST DIRECT CREDIT</CRAccountName>
+    <CRAccountNum>987651234</CRAccountNum>
+    <CRBSBNum>732-088</CRBSBNum>
+</GetDirectCreditDetails>
+<GetPrevHealthFundDetails>
+    <OldFundId>BUP</OldFundId>
+    <OldFundMemberNumber>12341234</OldFundMemberNumber>
+    <OldFundGivenName>Gilbert</OldFundGivenName>
+    <OldFundSurname>Phoenix</OldFundSurname>
+    <OldFundTransferAuthDate>02122022</OldFundTransferAuthDate>
+    <OldPartnerFundId></OldPartnerFundId>
+    <OldPartnerFundMemberNo></OldPartnerFundMemberNo>
+    <OldPartnerFundGivenName></OldPartnerFundGivenName>
+    <OldPartnerFundSurname></OldPartnerFundSurname>
+    <OldPartnerFundTransferAuthDate></OldPartnerFundTransferAuthDate>
+</GetPrevHealthFundDetails>
+</GetHCFSaleInfo>]]></con:request>
+          <con:originalUri>https://test5.api.hcfbiz.com.au/brokers/v1/joinAcceptance</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+          <con:parameterOrder/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="9d2e2775-45f5-45ab-b335-85d6581156dd" name="Broker test">
+    <con:settings/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="321239f0-dcd8-4ed5-89d6-ca1dcbbdf7d3" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Broker join" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="datasource" name="Get data policy holder and cover details" id="90232205-32da-4a98-b98d-c40c84e8c4c7">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Excel">
+            <con:configuration>
+              <file>//IC2DEVTAS01/TestData/Test team API/Broker API/Broker join API.xlsx</file>
+              <worksheet>Policy holder and cover details</worksheet>
+              <cell>A2</cell>
+              <ignoreEmpty>false</ignoreEmpty>
+              <evaluateFormulas>true</evaluateFormulas>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>SourceCode</con:property>
+          <con:property>AgentCustomerId</con:property>
+          <con:property>AgentPaymentId</con:property>
+          <con:property>Client Details Title</con:property>
+          <con:property>GivenName</con:property>
+          <con:property>Surname</con:property>
+          <con:property>DOB</con:property>
+          <con:property>Gender</con:property>
+          <con:property>Address</con:property>
+          <con:property>Suburb</con:property>
+          <con:property>State</con:property>
+          <con:property>PostCode</con:property>
+          <con:property>PostalSameResidenceInd</con:property>
+          <con:property>Postal Address</con:property>
+          <con:property>Postal Suburb</con:property>
+          <con:property>Postal State</con:property>
+          <con:property>PostalPostCode</con:property>
+          <con:property>Phone</con:property>
+          <con:property>Email</con:property>
+          <con:property>MaritalStatus</con:property>
+          <con:property>Number of Dependants</con:property>
+          <con:property>Declare Date</con:property>
+          <con:property>Commencement Date</con:property>
+          <con:property>Hospital Cover</con:property>
+          <con:property>Extras Cover</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasource" name="Get Data Partner" id="caa29e42-1dd5-434f-b3a0-e460292942c9">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Excel">
+            <con:configuration>
+              <file>//IC2DEVTAS01/TestData/Test team API/Broker API/Broker join API.xlsx</file>
+              <worksheet>Get Partner Details</worksheet>
+              <cell>A2</cell>
+              <ignoreEmpty>false</ignoreEmpty>
+              <evaluateFormulas>false</evaluateFormulas>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>Partner Title</con:property>
+          <con:property>First name</con:property>
+          <con:property>Last Name</con:property>
+          <con:property>DOB</con:property>
+          <con:property>Gender</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasource" name="Get Data Dependants" id="f20f1f8b-cb61-4ded-881d-aba3b73e840f">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Excel">
+            <con:configuration>
+              <file>//IC2DEVTAS01/TestData/Test team API/Broker API/Broker join API.xlsx</file>
+              <worksheet>Get Dependants Details</worksheet>
+              <cell>A2</cell>
+              <ignoreEmpty>false</ignoreEmpty>
+              <evaluateFormulas>false</evaluateFormulas>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>Partner Title</con:property>
+          <con:property>First name</con:property>
+          <con:property>Last Name</con:property>
+          <con:property>DOB</con:property>
+          <con:property>Gender</con:property>
+          <con:property>Relationship</con:property>
+          <con:property>DependantSchool</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasource" name="Fund details" id="be4954bb-e0a3-4f11-a240-b008b48ddd56">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Excel">
+            <con:configuration>
+              <file>//IC2DEVTAS01/TestData/Test team API/Broker API/Broker join API.xlsx</file>
+              <worksheet>Other fund details</worksheet>
+              <cell>A2</cell>
+              <ignoreEmpty>false</ignoreEmpty>
+              <evaluateFormulas>false</evaluateFormulas>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>Old FundId</con:property>
+          <con:property>Old Fund Member Number</con:property>
+          <con:property>Old Fund Transfer Auth Date</con:property>
+          <con:completeLastOperation>true</con:completeLastOperation>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="REST Request" id="e22934af-732d-494f-8782-24361093c4bc">
+        <con:settings/>
+        <con:config service="Broker" resourcePath="/brokers/v1/joinAcceptance" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="ba3814b9-dbd0-40df-ae56-672528663124" mediaType="application/xml" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="client_id" value="0oap85uz0iwMK1jv20h7"/>
+  &lt;con:entry key="client_secret" value="M9JAe-EDAjKpcCHBU2OftaoXBdyRW9Tmah4_K8YU"/>
+&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:request><![CDATA[<GetHCFSaleInfo>
+<GetAgentDetails>
+    <SourceCode>${Get data policy holder and cover details#SourceCode}</SourceCode>
+    <AgentCustomerId>${Get data policy holder and cover details#AgentCustomerId}</AgentCustomerId>
+     <AgentPaymentId>${Get data policy holder and cover details#AgentPaymentId}</AgentPaymentId>
+</GetAgentDetails>
+<GetClientDetails>
+    <Title>${Get data policy holder and cover details#Client Details Title}</Title>
+    <GivenName>${Get data policy holder and cover details#GivenName}</GivenName>
+    <Surname>${Get data policy holder and cover details#Surname}</Surname>
+    <DOB>${Get data policy holder and cover details#DOB}</DOB>
+    <Gender>${Get data policy holder and cover details#Gender}</Gender>
+    <Address1>${Get data policy holder and cover details#Address}</Address1>
+    <Address2></Address2>
+    <Suburb>${Get data policy holder and cover details#Suburb}</Suburb>
+    <State>${Get data policy holder and cover details#State}</State>
+    <PostCode>${Get data policy holder and cover details#PostCode}</PostCode>
+    <PostalSameResidenceInd>${Get data policy holder and cover details#PostalSameResidenceInd}</PostalSameResidenceInd>
+    <PostalAddress1>${Get data policy holder and cover details#Postal Address}</PostalAddress1>
+    <PostalAddress2></PostalAddress2>
+    <PostalSuburb>${Get data policy holder and cover details#Postal Suburb}</PostalSuburb>
+    <PostalState>${Get data policy holder and cover details#Postal State}</PostalState>
+    <PostalPostCode>${Get data policy holder and cover details#PostalPostCode}</PostalPostCode>
+    <HomePhone>${Get data policy holder and cover details#Phone}</HomePhone>
+    <WorkPhone/>
+    <MobilePhone/>
+   <EmailAddress>${Get data policy holder and cover details#Email}</EmailAddress>
+    <MaritalStatus>${Get data policy holder and cover details#MaritalStatus}</MaritalStatus>
+    <NumDependants>${Get data policy holder and cover details#Number of Dependants}</NumDependants>
+    <DeclareDate>${Get data policy holder and cover details#Declare Date}</DeclareDate>
+    <RegisterFurtherCommunication>Y</RegisterFurtherCommunication>
+</GetClientDetails>
+<GetPolicyDetails>
+    <CommencementDate>${Get data policy holder and cover details#Commencement Date}</CommencementDate>
+    <HospitalCover>${Get data policy holder and cover details#Hospital Cover}</HospitalCover>
+    <ExtrasCover>${Get data policy holder and cover details#Extras Cover}</ExtrasCover>
+    <FederalRebate>N</FederalRebate>
+    <RebateTier></RebateTier>
+    <MedicareNumber></MedicareNumber>
+    <MedicareGivenName></MedicareGivenName>
+    <MedicareMiddleInitial></MedicareMiddleInitial>
+    <MedicareSurname></MedicareSurname>
+    <MedicareDOB></MedicareDOB>
+    <MedicareGender></MedicareGender>
+    <MedicareExpiryDate></MedicareExpiryDate>
+    <MedicareEligibility>Y</MedicareEligibility>
+    <ContinuousCover>Y</ContinuousCover>
+    <PartnerContinuousCover>N</PartnerContinuousCover>
+    <BasePremium></BasePremium>
+    <TotalPremium></TotalPremium>
+    <ExcessCode>G</ExcessCode>
+    <TransferFromFund>Y</TransferFromFund>
+</GetPolicyDetails>
+<GetPartnerDetails>
+    <PartnerTitle>${Get Data Partner#Partner Title}</PartnerTitle>
+    <PartnerGivenName>${Get Data Partner#First name}</PartnerGivenName>
+    <PartnerSurname>${Get Data Partner#Last Name}</PartnerSurname>
+    <PartnerDOB>${Get Data Partner#DOB}</PartnerDOB>
+    <PartnerGender>${Get Data Partner#Gender}</PartnerGender>
+</GetPartnerDetails>
+<GetDependantsDetails>
+    <Dependant>
+        <DependantTitle>${Get Data Dependants#Partner Title}</DependantTitle>
+        <DependantGivenName>${Get Data Dependants#First name}</DependantGivenName>
+        <DependantSurname>${Get Data Dependants#Last Name}</DependantSurname>
+        <DependantGender>${Get Data Dependants#Gender}</DependantGender>
+        <Relationship>${Get Data Dependants#Relationship}</Relationship>
+        <DependantDOB>${Get Data Dependants#DOB}</DependantDOB>
+        <DependantSchool>${Get Data Dependants#DependantSchool}</DependantSchool>
+    </Dependant>
+</GetDependantsDetails>
+<GetOneOffPaymentDetails>
+    <OneOffPayment>N</OneOffPayment>
+    <CCToken></CCToken>
+    <CCMaskedPan></CCMaskedPan>
+    <CCExpiryDate></CCExpiryDate>
+    <InitialPaymentFrequency></InitialPaymentFrequency>
+    <InitialAmountPaid></InitialAmountPaid>
+</GetOneOffPaymentDetails>
+<GetDirectDebitPaymentDetails>
+    <DebitType>C</DebitType>
+    <DebitFrequency>m</DebitFrequency>
+    <DebitDay>21</DebitDay>
+</GetDirectDebitPaymentDetails>
+<GetDebitCCDetails>
+    <DDCCHolderName>Test Name</DDCCHolderName>
+    <DDCCToken>9994111111111111111</DDCCToken>
+    <DDCCMaskedPan>411111XXXXXX1111</DDCCMaskedPan>
+    <DDCCExpiryDate>122025</DDCCExpiryDate>
+</GetDebitCCDetails>
+<GetDirectCreditDetails>
+    <DirectCredit>Y</DirectCredit>
+    <CRAccountName>TEST DIRECT CREDIT</CRAccountName>
+    <CRAccountNum>987651234</CRAccountNum>
+    <CRBSBNum>732-088</CRBSBNum>
+</GetDirectCreditDetails>
+<GetPrevHealthFundDetails>
+    <OldFundId>${Fund details#Old FundId}</OldFundId>
+    <OldFundMemberNumber>${Fund details#Old Fund Member Number}</OldFundMemberNumber>
+    <OldFundGivenName>Gilbert</OldFundGivenName>
+    <OldFundSurname>Phoenix</OldFundSurname>
+    <OldFundTransferAuthDate>${Fund details#Old Fund Transfer Auth Date}</OldFundTransferAuthDate>
+    <OldPartnerFundId></OldPartnerFundId>
+    <OldPartnerFundMemberNo></OldPartnerFundMemberNo>
+    <OldPartnerFundGivenName></OldPartnerFundGivenName>
+    <OldPartnerFundSurname></OldPartnerFundSurname>
+    <OldPartnerFundTransferAuthDate></OldPartnerFundTransferAuthDate>
+</GetPrevHealthFundDetails>
+</GetHCFSaleInfo>]]></con:request>
+            <con:originalUri>https://test5.api.hcfbiz.com.au/brokers/v1/joinAcceptance</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="1e6e9b16-fefa-4874-b031-5605b8c70384" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="transfer" name="Property Transfer" id="507ee160-432b-4d33-aa05-5e35c69acee0">
+        <con:settings/>
+        <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+            <con:name>Member number</con:name>
+            <con:sourceType>Response</con:sourceType>
+            <con:sourceStep>REST Request</con:sourceStep>
+            <con:sourcePath>${REST Request#Response#//GetHCFSaleInfo[1]/GetHCFGeneratedInfo[1]/CovernoteMemberNumber[1]}</con:sourcePath>
+            <con:targetType>Member number</con:targetType>
+            <con:targetStep>Member details</con:targetStep>
+            <con:targetPath/>
+            <con:upgraded>true</con:upgraded>
+          </con:transfers>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="properties" name="Member details" id="b489ebe9-42fe-4cc9-9c32-a72d29f907ee">
+        <con:settings/>
+        <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:properties>
+            <con:property>
+              <con:name>Member number</con:name>
+              <con:value>19304</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:requirements/>
+  <con:properties>
+    <con:property>
+      <con:name>client_secret</con:name>
+    </con:property>
+    <con:property>
+      <con:name>client_id</con:name>
+    </con:property>
+  </con:properties>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:reportTemplates/>
+    <con:xmlTemplates/>
+    <con:xmlTemplates/>
+    <con:parameters/>
+    <con:parameters/>
+  </con:reporting>
+  <con:reporting/>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to ReadyAPI functional tests
+
+// If hardcoding the token, uncomment and change line 5
+// token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new java.io.FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new java.io.PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:environment id="e5eb2e04-99ee-456f-b982-728fdae4ae6f" name="Test5" index="0">
+    <con:service type="REST" name="Broker">
+      <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">https://test5.api.hcfbiz.com.au</con:endpoint>
+    </con:service>
+    <con:property>
+      <con:name>client_secret</con:name>
+      <con:value>M9JAe-EDAjKpcCHBU2OftaoXBdyRW9Tmah4_K8YU</con:value>
+    </con:property>
+    <con:property>
+      <con:name>client_id</con:name>
+      <con:value>0oap85uz0iwMK1jv20h7</con:value>
+    </con:property>
+    <con:databaseConnectionContainer/>
+    <con:jmsConnectionContainer/>
+  </con:environment>
+  <con:authRepository/>
+  <con:environmentSpec>
+    <con:entry environmentId="e5eb2e04-99ee-456f-b982-728fdae4ae6f">
+      <con:authProfile>No Authorization</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+  <con:tags/>
+</con:soapui-project>

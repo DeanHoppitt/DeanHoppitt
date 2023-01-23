@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="9d2e2775-45f5-45ab-b335-85d6581156dd" name="Broker test" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9d2e2775-45f5-45ab-b335-85d6581156ddfileName">Broker-test</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

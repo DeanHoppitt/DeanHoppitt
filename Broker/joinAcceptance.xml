@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="joinAcceptance" path="/brokers/v1/joinAcceptance" id="e19a9189-1f46-4868-9960-11f89b02b90c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e19a9189-1f46-4868-9960-11f89b02b90cfileName">joinAcceptance</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 1" id="5fac2ba6-c814-4e4c-859c-011e47f5025d" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="ba3814b9-dbd0-40df-ae56-672528663124" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="client_id" value="0oap85uz0iwMK1jv20h7"/>
+  &lt;con:entry key="client_secret" value="M9JAe-EDAjKpcCHBU2OftaoXBdyRW9Tmah4_K8YU"/>
+&lt;/xml-fragment></con:setting>
+      </con:settings>
+      <con:request><![CDATA[<GetHCFSaleInfo>
+<GetAgentDetails>
+    <SourceCode>O20810</SourceCode>
+    <AgentCustomerId>1111122</AgentCustomerId>
+    <AgentPaymentId>555533</AgentPaymentId>
+</GetAgentDetails>
+ <GetClientDetails>
+    <Title>004</Title>
+    <GivenName>Dean</GivenName>
+    <Surname>smith</Surname>
+    <DOB>18041971</DOB>
+    <Gender>F</Gender>
+    <Address1>400 Castlereagh Street</Address1>
+    <Address2></Address2>
+    <Suburb>Sydney</Suburb>
+    <State>NSW</State>
+    <PostCode>2000</PostCode>
+    <PostalSameResidenceInd>N</PostalSameResidenceInd>
+    <PostalAddress1>PO BOX 111</PostalAddress1>
+    <PostalAddress2></PostalAddress2>
+    <PostalSuburb>Sydney</PostalSuburb>
+    <PostalState>nsw</PostalState>
+    <PostalPostCode>2000</PostalPostCode>
+    <HomePhone>0292900456</HomePhone>
+    <WorkPhone/>
+    <MobilePhone/>
+    <EmailAddress>dhoppitt@hcf.com.au</EmailAddress>
+    <MaritalStatus>F</MaritalStatus>
+    <NumDependants>1</NumDependants>
+    <DeclareDate>02122022</DeclareDate>
+    <RegisterFurtherCommunication>Y</RegisterFurtherCommunication>
+</GetClientDetails>
+<GetPolicyDetails>
+    <CommencementDate>02122022</CommencementDate>
+    <HospitalCover>PremHosp</HospitalCover>
+    <ExtrasCover>SilverPlus</ExtrasCover>
+    <FederalRebate>N</FederalRebate>
+    <RebateTier></RebateTier>
+    <MedicareNumber></MedicareNumber>
+    <MedicareGivenName></MedicareGivenName>
+    <MedicareMiddleInitial></MedicareMiddleInitial>
+    <MedicareSurname></MedicareSurname>
+    <MedicareDOB></MedicareDOB>
+    <MedicareGender></MedicareGender>
+    <MedicareExpiryDate></MedicareExpiryDate>
+    <MedicareEligibility>Y</MedicareEligibility>
+    <ContinuousCover>Y</ContinuousCover>
+    <PartnerContinuousCover>N</PartnerContinuousCover>
+    <BasePremium></BasePremium>
+    <TotalPremium></TotalPremium>
+    <ExcessCode>G</ExcessCode>
+    <TransferFromFund>Y</TransferFromFund>
+</GetPolicyDetails>
+<GetPartnerDetails>
+    <PartnerTitle>001</PartnerTitle>
+    <PartnerGivenName>Adam</PartnerGivenName>
+    <PartnerSurname>Gorham</PartnerSurname>
+    <PartnerDOB>29071965</PartnerDOB>
+    <PartnerGender>m</PartnerGender>
+</GetPartnerDetails>
+<GetDependantsDetails>
+    <Dependant>
+        <DependantTitle>001</DependantTitle>
+        <DependantGivenName>DXXXX</DependantGivenName>
+        <DependantSurname>Gorham</DependantSurname>
+        <DependantGender>M</DependantGender>
+        <Relationship>4</Relationship>
+        <DependantDOB>30101991</DependantDOB>
+        <DependantSchool>UNSW</DependantSchool>
+    </Dependant>
+</GetDependantsDetails>
+<GetOneOffPaymentDetails>
+    <OneOffPayment>N</OneOffPayment>
+    <CCToken></CCToken>
+    <CCMaskedPan></CCMaskedPan>
+    <CCExpiryDate></CCExpiryDate>
+    <InitialPaymentFrequency></InitialPaymentFrequency>
+    <InitialAmountPaid></InitialAmountPaid>
+</GetOneOffPaymentDetails>
+<GetDirectDebitPaymentDetails>
+    <DebitType>C</DebitType>
+    <DebitFrequency>m</DebitFrequency>
+    <DebitDay>21</DebitDay>
+</GetDirectDebitPaymentDetails>
+<GetDebitCCDetails>
+    <DDCCHolderName>Test Name</DDCCHolderName>
+    <DDCCToken>9994111111111111111</DDCCToken>
+    <DDCCMaskedPan>411111XXXXXX1111</DDCCMaskedPan>
+    <DDCCExpiryDate>122023</DDCCExpiryDate>
+</GetDebitCCDetails>
+<GetDirectCreditDetails>
+    <DirectCredit>Y</DirectCredit>
+    <CRAccountName>TEST DIRECT CREDIT</CRAccountName>
+    <CRAccountNum>987651234</CRAccountNum>
+    <CRBSBNum>732-088</CRBSBNum>
+</GetDirectCreditDetails>
+<GetPrevHealthFundDetails>
+    <OldFundId>BUP</OldFundId>
+    <OldFundMemberNumber>12341234</OldFundMemberNumber>
+    <OldFundGivenName>Gilbert</OldFundGivenName>
+    <OldFundSurname>Phoenix</OldFundSurname>
+    <OldFundTransferAuthDate>02122022</OldFundTransferAuthDate>
+    <OldPartnerFundId></OldPartnerFundId>
+    <OldPartnerFundMemberNo></OldPartnerFundMemberNo>
+    <OldPartnerFundGivenName></OldPartnerFundGivenName>
+    <OldPartnerFundSurname></OldPartnerFundSurname>
+    <OldPartnerFundTransferAuthDate></OldPartnerFundTransferAuthDate>
+</GetPrevHealthFundDetails>
+</GetHCFSaleInfo>]]></con:request>
+      <con:originalUri>https://test5.api.hcfbiz.com.au/brokers/v1/joinAcceptance</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder/>
+    </con:request>
+  </con:method>
+</con:resource>
